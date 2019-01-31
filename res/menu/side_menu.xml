@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">>
+
+
+        <item
+            android:id="@+id/accountsetting"
+            android:title="Update Profile" />
+        <item
+        android:id="@+id/all_friends"
+        android:title="Friends" />
+
+        <item
+        android:id="@+id/all_recieved_requests"
+        android:title="Pending requests" />
+
+        <item
+            android:id="@+id/all_sent_requests"
+            android:title="Following" />
+       <item
+        android:id="@+id/allusermenu"
+        android:title="All perl users" />
+    <item
+        android:title=" " />
+        <item
+            android:id="@+id/logout"
+            android:title="Log out" />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="1dp"
+        android:background="#aef6d1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/DP"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:padding="7dp"
+                android:visibility="visible"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/DP"
+                android:lineSpacingExtra="8sp"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/DP"
+                android:text="TextView"
+                android:textColor="@color/fui_bgFacebook"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

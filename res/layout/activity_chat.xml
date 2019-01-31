@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/chat_page_toolbar"/>
+
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/sendbtn" />
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="336dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/send_message"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:ems="10"
+        android:hint="Type message"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@color/browser_actions_bg_grey" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_message"
+        android:layout_below="@+id/chat_page_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/input_message"
+            android:layout_below="@+id/chat_page_toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <TextView
+        android:id="@+id/last_online_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="TextView" />
+
+</RelativeLayout>
